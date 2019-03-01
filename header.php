@@ -13,9 +13,9 @@ loginchk($userid);
 <title><?php echo siteName;?></title>
 <link rel="apple-touch-icon" sizes="180x180" href="<?php echo SiteURL;?>img/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="<?php echo SiteURL;?>img/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="<?php echo SiteURL;?>img/favicon-16x16.png">
 <link rel="stylesheet" href="css/bootstrap.min.css" />
-<link rel="stylesheet" href="css/itlu.style.css?011701" />
+<link rel="stylesheet" href="css/itlu.style.css?<?php echo $version;?>" />
 <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
-<script type="text/javascript" src="js/all.js?011004"></script>
+<script type="text/javascript" src="js/all.js?<?php echo $version;?>"></script>
 </head>
 
 <body><div id="itlu-wrap">
