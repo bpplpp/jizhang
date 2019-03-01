@@ -433,7 +433,7 @@ if($getaction=='import') {
 }
 if($getaction=='updatesystem'){
 	$filepath = "data/config.php";
-	$info=file_get_contents($filepath);
+	$info = vita_get_url_content($filepath);
 	foreach($_POST as $k=>$v){
         $info=preg_replace("/define\(\"{$k}\",\".*?\"\)/","define(\"{$k}\",\"{$v}\")",$info);
     }
@@ -446,7 +446,7 @@ if($getaction=='updatesystem'){
 }
 if($getaction=='updatesmtp'){
 	$filepath = "inc/smtp_config.php";
-	$info=file_get_contents($filepath);
+	$info = vita_get_url_content($filepath);
 	foreach($_POST as $k=>$v){
         $info=preg_replace("/define\(\"{$k}\",\".*?\"\)/","define(\"{$k}\",\"{$v}\")",$info);
     }
